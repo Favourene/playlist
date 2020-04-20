@@ -1,0 +1,86 @@
+body{
+  text-align: center;
+  background: linear-gradient(-45deg, #aa92eb, #6b6dd3, #3b30a3, #18044e);
+  background-size: 400% 400%;
+  color: white;
+  animation: change 10s ease-in-out infinite;
+  position: relative;
+}
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+  }
+}
+.hot:before{
+  content: '';
+  animation: animate infinite  8s;
+}
+@keyframes animate{
+  0%{
+      content: 'Billie Eilish';
+  }
+  20%{
+      content: 'Jon Bellion';
+  }
+  40%{
+      content: 'Travis Mendes';
+  }
+  60%{
+      content: 'Selena Gomez';
+  }
+  80%{
+      content: 'Jon Bellion';
+  }
+  100%{
+      content: 'Billie Eilish';
+  }
+}
+
+audio {
+  width: 400px;
+  margin-bottom: 30px;
+}
+.name{
+  font-size: 25px;
+ padding-bottom: 30px;
+}
+a{
+  text-decoration: none;
+}
+#bi{
+  font-size: 20px;
+  color: #18044e;
+  padding: 10px 20px 10px 20px;
+  margin: 30px 0 0 30px;
+  border-radius: 20px;
+  border-style: none;
+}
+#bi:hover{
+  transform:  translate(6.25%);
+}
+h4{
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+h5{
+  font-size: 22px;
+}
+
+#say{
+  font-size: 20px;
+  color: #4e040a;
+  padding: 10px 20px 10px 20px;
+  margin: 30px 0 0 30px;
+  border-radius: 10px;
+  border-style: none;
+}
+#say:hover{
+  transform:  translate(20%);
+}
